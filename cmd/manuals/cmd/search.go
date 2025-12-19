@@ -15,7 +15,7 @@ var searchCmd = &cobra.Command{
 	Short: "Search for devices and documentation",
 	Long: `Search the Manuals database for devices matching your query.
 
-Uses full-text search to find relevant hardware and software documentation.
+Uses semantic (vector) search to find relevant hardware and software documentation.
 Results are ranked by relevance and include snippet previews.`,
 	Example: `  manuals search "raspberry pi gpio"
   manuals search "uart protocol" --limit 5
